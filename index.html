@@ -16,10 +16,10 @@
             <fieldset>
                 <legend>Personal Information</legend>
                 <label>Name:</label>
-                <input type="text" placeholder="Company name" autocomplete="on" required>
+                <input type="text" name="Company name" placeholder="Company name" autocomplete="on" required>
                 <br /><p></p>
                 <label>Email:</label>
-                <input type="email" autocomplete="on" placeholder="something@gmail.com" required>
+                <input type="email" name="Email" autocomplete="on" placeholder="something@gmail.com" required>
                 <br /><p></p>
                 <label>country code:</label>
                 <select required>
@@ -29,13 +29,13 @@
                 </select>
                 <br /><p></p>
                 <label>tel:</label>
-                <input type="tel" placeholder="9123456789" autocomplete="on" required>
+                <input type="tel" name="phone" placeholder="9123456789" autocomplete="on" required>
             </fieldset>
             <br /><p></p>
             <fieldset>
                 <legend>Company Information</legend>
                 <label>company size:</label>
-                <select required>
+                <select name="company_size" required>
                     <option>1-10 employees</option>
                     <option>11-50 employees</option>
                     <option>51-200 employees</option>
@@ -45,10 +45,10 @@
                 </select>
                 <br /><p></p>
                 <label>Management Team size</label>
-                <input type="number" min="1" max="100" placeholder="Size" autocomplete="on" required />
+                <input type="number" name="management_team_size" min="1" max="100" placeholder="Size" autocomplete="on" required />
                 <br /><p></p>
                 <p>Set your budget range per month (min: $10, max: $1000)</p>
-                <input type="range" min="10" max="1000" step="10" />
+                <input type="range" name="budget" min="10" max="1000" step="10" />
             </fieldset>
             <br /><p></p>
             <fieldset>
@@ -64,32 +64,32 @@
                 <label>Just exploring</label>
                 <br /><p></p>
                 <p>theme preferences</p>
-                <input type="color" required/>
+                <input type="color" name="theme color" required/>
                 <label>background theme</label><br />
-                <input type="color" required/>
+                <input type="color" name="font color" required/>
                 <label>font color</label>
                 <br /><p></p>
                 <p>Onboarding Date</p>
-                <input type="date" required/>
+                <input type="date" name="Onboarding date" required/>
             </fieldset>
             <br /><p></p>
             <fieldset>
                 <legend>Features</legend>
-                <input type="checkbox" />
+                <input type="checkbox" name="Automation" />
                 <label>Automation</label><br />
-                <input type="checkbox" />
+                <input type="checkbox" name="Collaboration" />
                 <label>Collaboration</label><br />
-                <input type="checkbox" />
+                <input type="checkbox" name="Integrations" />
                 <label>Integrations</label><br />
-                <input type="checkbox" />
+                <input type="checkbox" name="Security" />
                 <label>Security</label><br />
-                <input type="checkbox" />
+                <input type="checkbox" name="Mobile Access" />
                 <label>Mobile Access</label><br />
-                <input type="checkbox" />
+                <input type="checkbox" name="Custom Workflows" />
                 <label>Custom Workflows</label><br />
             </fieldset>
             <br /><p></p>
-            <button type="submit">send request</button>
+            <input type="submit" value="send request" />
         </form>
     </main>
 </body>
